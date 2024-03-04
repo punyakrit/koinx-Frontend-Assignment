@@ -1,15 +1,24 @@
-import { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import axios from "axios";
 import TradingViewWidget from "./TradingViewWidget";
 import img from "../assets/btc.png";
 
-function Crypto() {
-  const [cryptoData, setCryptoData] = useState(null);
+interface CryptoData {
+  inr: number;
+  inr_24h_change: number;
+  usd: number;
+  usd_24h_change: number;
+}
+
+function Crypto(): JSX.Element {
+  const [cryptoData, setCryptoData] = useState<CryptoData | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
+        const response = await axios.get<{
+          bitcoin: CryptoData;
+        }>(
           "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_24hr_change=true"
         );
         setCryptoData(response.data.bitcoin);

@@ -33,7 +33,7 @@ function Crypto(): JSX.Element {
   }, []);
 
   return (
-    <div className="bg-white h-max rounded-lg ml-14 my-4 p-6">
+    <div className="bg-white h-max rounded-lg my-4 p-6">
       <div className="flex items-center">
         <div>
           <img src={img} className="w-9" alt="Bitcoin" />

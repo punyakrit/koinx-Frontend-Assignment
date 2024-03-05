@@ -3,7 +3,7 @@ import promoimg from "../assets/promoimg.png";
 
 function CradsPromo() {
   return (
-    <div className="mt-4 bg-[#0052FE] text-white h-[515px] w-[426px] rounded-2xl px-10 py-8 ml-4 text-center">
+    <div className="mt-4 bg-[#0052FE] text-white h-[515px] rounded-2xl px-10 py-8 ml-4 text-center">
       <div className="">
         <div className="text-2xl px-12">Get Started with KoinX for FREE</div>
         <div className="text-sm mt-4">

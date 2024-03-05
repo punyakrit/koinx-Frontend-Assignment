@@ -6,8 +6,8 @@ function CoinPage() {
     <div className="h-screen w-screen bg-slate-200/40">
       <PageHolder/>
 
-      <div>
-        <div>
+      <div className="w-screen">
+        <div className="w-8/12">
             <Crypto/>
         </div>
         

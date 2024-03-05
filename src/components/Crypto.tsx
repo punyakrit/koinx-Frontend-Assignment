@@ -35,7 +35,7 @@ function Crypto(): JSX.Element {
   }, []);
 
   return (
-    <div className="bg-white h-max rounded-md mx-14 my-4 p-4">
+    <div className="bg-white h-max rounded-md ml-14 my-4 p-6">
       <div className="flex items-center">
         <div>
           <img src={img} className="w-9" alt="Bitcoin" />
@@ -51,10 +51,10 @@ function Crypto(): JSX.Element {
       <div className="mt-8 flex">
         <div>
           <div className="text-3xl font-semibold text-[#0B1426]">
-            {cryptoData && `$${cryptoData.usd}`}
+            {(cryptoData && `$${cryptoData.usd}`) || `$66759`}
           </div>
           <div className="text-lg font-medium text-[#0B1426]">
-            {cryptoData && `₹ ${cryptoData.inr}`}
+            {(cryptoData && `₹ ${cryptoData.inr}`) || `₹ 5535287`}
           </div>
         </div>
         <div className="flex items-center justify-center bg-green-300/20 rounded-lg p-2 h-10 ml-10">
@@ -65,7 +65,8 @@ function Crypto(): JSX.Element {
             <polygon points="0,100 50,0 100,100" />
           </svg>
           <span className="ml-2 text-sm font-bold">
-            {cryptoData && `${cryptoData.inr_24h_change.toFixed(2)}%`}
+            {(cryptoData && `${cryptoData.inr_24h_change.toFixed(2)}%`) ||
+              `2.18%`}
           </span>
         </div>
         <div className="text-sm text-[#768396] ml-2 mt-2">(24H)</div>
@@ -76,18 +77,19 @@ function Crypto(): JSX.Element {
           Bitcoin Price Chart (USD)
         </div>
         <div className="flex space-x-5 mr-4 text-sm text-[#5D667B] font-medium text-center items-center">
-    <div>1H</div>
-    <div>24H</div>
-    <div className="text-[#0141CF] bg-[#E2ECFE] rounded-3xl px-3 py-1">7D</div>
-    <div>1M</div>
-    <div>3M</div>
-    <div>6M</div>
-    <div>1Y</div>
-    <div>All</div>
-</div>
-
+          <div>1H</div>
+          <div>24H</div>
+          <div className="text-[#0141CF] bg-[#E2ECFE] rounded-3xl px-3 py-1">
+            7D
+          </div>
+          <div>1M</div>
+          <div>3M</div>
+          <div>6M</div>
+          <div>1Y</div>
+          <div>All</div>
+        </div>
       </div>
-      <div className="h-96">
+      <div className="h-[400px]">
         <TradingViewWidget />
       </div>
     </div>

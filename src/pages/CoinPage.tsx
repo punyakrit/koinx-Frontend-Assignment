@@ -1,6 +1,7 @@
 import CradsPromo from "../components/CradsPromo"
 import Crypto from "../components/Crypto"
 import PageHolder from "../components/PageHolder"
+import PerformanceSection from "../components/PerformanceSection"
 import ToggleSection from "../components/ToggleSection"
 import TrendingCoins from "../components/TrendingCoins"
 
@@ -13,6 +14,7 @@ function CoinPage() {
         <div className="w-8/12 ml-14">
             <Crypto/>
             <ToggleSection/>
+            <PerformanceSection/>
         </div>
         <div className="w-4/12 mr-14">
           <CradsPromo/>

@@ -87,7 +87,7 @@ function Crypto(): JSX.Element {
           <div>All</div>
         </div>
       </div>
-      <div className="h-[400px]">
+      <div className="h-[420px]">
         <TradingViewWidget />
       </div>
     </div>

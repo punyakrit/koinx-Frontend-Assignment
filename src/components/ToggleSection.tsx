@@ -12,7 +12,7 @@ function ToggleSection() {
         <div>Technicals</div>
         <div>Tokenomics</div>
       </div>
-      <hr className="mx-14"></hr>
+      <hr className=""></hr>
     </div>
   );
 }

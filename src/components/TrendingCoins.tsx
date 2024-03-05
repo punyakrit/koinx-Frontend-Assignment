@@ -17,7 +17,7 @@ function TrendingCoins() {
         const response = await axios.get(
           "https://api.coingecko.com/api/v3/search/trending"
         );
-        const trendingCoins = response.data.coins.slice(2, 5);
+        const trendingCoins = response.data.coins.slice(0, 3);
 
         const formattedCoinsData: CoinProps[] = trendingCoins.map((coin: any) => ({
           symbol: coin.item.symbol.toUpperCase(),

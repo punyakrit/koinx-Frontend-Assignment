@@ -2,7 +2,7 @@ import logo from "../assets/logo.svg";
 
 function Navbar() {
   return (
-    <div className="h-20 flex items-center justify-between shadow-[#1026490F]/10 fixed shadow-md bg-[#FFFFFF]  w-screen">
+    <div className="h-20 flex items-center justify-between shadow-[#1026490F]/10  shadow-md bg-[#FFFFFF]  w-screen">
       <div>
         <img src={logo} alt="Logo" className="w-24 h-6 ml-14"></img>
       </div>

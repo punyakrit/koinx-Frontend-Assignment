@@ -2,7 +2,7 @@ import { IoMdInformationCircle } from "react-icons/io";
 
 function PerformanceSection() {
   return (
-    <div className="bg-white mt-4 rounded-lg p-6 h-max">
+    <div className="bg-white mt-5 rounded-lg p-6 h-max">
       <div>
         <div className="text-2xl font-semibold text-[#0F1629]">Performance</div>
         <div className="py-4 mt-2">
@@ -157,7 +157,7 @@ function PerformanceSection() {
                 </div>
                 <div className="text-[#111827] text-sm font-semibold mr-4 -p-2">
                   <div className="text-end">
-                  $67.81 <span className="text-green-500">-24729.1%</span>
+                  $67.81 <span className="text-green-500">24729.1%</span>
                   </div>
                   <div className="text-xs font-normal">
                   Jul 06, 2013 (over 9 years)

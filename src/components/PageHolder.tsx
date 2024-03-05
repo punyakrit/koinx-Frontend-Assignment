@@ -1,6 +1,6 @@
 function PageHolder() {
     return (
-      <div className="flex pl-14 pt-24">
+      <div className="flex pl-14 pt-4">
         <div className="text-sm text-[#3E5765]">
           Cryptocurrencies
         </div>

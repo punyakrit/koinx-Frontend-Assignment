@@ -22,9 +22,7 @@ function Crypto(): JSX.Element {
           "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_24hr_change=true"
         );
         setCryptoData(response.data.bitcoin);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-      }
+      } catch (error) {}
     };
 
     fetchData();
@@ -35,7 +33,7 @@ function Crypto(): JSX.Element {
   }, []);
 
   return (
-    <div className="bg-white h-max rounded-md ml-14 my-4 p-6">
+    <div className="bg-white h-max rounded-lg ml-14 my-4 p-6">
       <div className="flex items-center">
         <div>
           <img src={img} className="w-9" alt="Bitcoin" />
@@ -64,7 +62,7 @@ function Crypto(): JSX.Element {
           >
             <polygon points="0,100 50,0 100,100" />
           </svg>
-          <span className="ml-2 text-sm font-bold">
+          <span className="ml-2 text-sm font-bold text-green-600">
             {(cryptoData && `${cryptoData.inr_24h_change.toFixed(2)}%`) ||
               `2.18%`}
           </span>

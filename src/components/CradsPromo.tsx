@@ -16,7 +16,7 @@ function CradsPromo() {
       </div>
       <div className="flex justify-center">
 
-      <div className="flex justify-center mt-8 bg-white text-[#0F1629] rounded-xl py-3 w-[237px] text-center ">
+      <div className="flex justify-center mt-8 bg-white text-[#0F1629] rounded-xl py-3 w-[237px] text-center cursor-pointer">
         <button className="font-medium"> 
           Get Started for FREE
         </button>

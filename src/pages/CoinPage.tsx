@@ -1,3 +1,4 @@
+import About from "../components/About"
 import CradsPromo from "../components/CradsPromo"
 import Crypto from "../components/Crypto"
 import PageHolder from "../components/PageHolder"
@@ -17,6 +18,7 @@ function CoinPage() {
             <ToggleSection/>
             <PerformanceSection/>
             <SentimentSection/>
+            <About/>
         </div>
         <div className="w-4/12 mr-14">
           <CradsPromo/>

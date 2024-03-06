@@ -21,10 +21,10 @@ function CoinPage() {
             <Crypto/>
              <ToggleSection/>
              <PerformanceSection/>
-             {/* <SentimentSection/>
+             <SentimentSection/>
              <About/>
              <Tokenomics/>
-             <Team/> */}
+             <Team/>
         </div>
         {/* <div className="lg:w-4/12 lg:mr-14 mx-4">
           <CradsPromo/>

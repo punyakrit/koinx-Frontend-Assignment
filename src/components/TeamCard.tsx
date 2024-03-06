@@ -1,6 +1,6 @@
 function TeamCard() {
   return (
-    <div className="bg-white h-max rounded-lg my-5 p-6">
+    <div className="bg-white h-max rounded-lg my-5 lg:p-6 p-2">
       <div>
         <div className="text-2xl text-[#0F1629] font-semibold">Team</div>
         <div className="text-[#3E424A] text-[16px] font-medium my-4 pt-2">
@@ -32,10 +32,10 @@ function TeamCard() {
 
 function Card({ name, link, des }: any) {
   return (
-    <div className="flex bg-[#E8F4FD] rounded-lg py-4 px-8 my-6">
+    <div className="md:flex bg-[#E8F4FD] rounded-lg py-4 md:px-8 my-6">
       <div className="justify-center flex flex-col items-center">
         <div>
-          <img className="rounded-xl" src={link} alt="" />
+          <img className="rounded-xl w-44 lg:w-96" src={link} alt="" />
         </div>
         <div className="text-[#0F1629] text-[15px] font-semibold py-1">
           {name}

@@ -37,7 +37,7 @@ function TrendingCoins() {
   }, []);
 
   return (
-    <div className=" h-[225px] bg-white ml-4 mt-4 rounded-lg px-8 pt-5">
+    <div className=" lg:h-[225px] bg-white lg:ml-4 mt-4 rounded-lg px-8 pt-5">
       <div className="text-2xl font-semibold text-[#0F1629]">
         Trending Coins (24h)
       </div>

@@ -17,7 +17,7 @@ function SuggestionSection() {
   }, []);
 
   return (
-    <div className="bg-white h-max mt-10 p-14">
+    <div className="bg-white h-max mt-10 lg:p-14 p-8">
       <div>
         <div className="text-[#202020] text-2xl font-semibold">
           You May Also Like
@@ -47,7 +47,7 @@ function CryptoCard({ cryptoData }: any) {
   console.log("Sparkline URL:", cryptoData.sparkline);
 
   return (
-    <div className="w-[300px] rounded-2xl p-5 border-2 my-2 mr-2">
+    <div className="lg:w-[300px] rounded-2xl p-5 border-2 my-2 mr-2">
       <div className="flex items-center space-x-2">
         <img
           src={cryptoData.large}
@@ -64,7 +64,7 @@ function CryptoCard({ cryptoData }: any) {
             cryptoData.data.price_change_percentage_24h.usd > 0
               ? "#0AB27D"
               : "#FF0000"
-          }/10 text-xs font-normal`}
+          }/10 text-xs font-normal pr-10`}
         >
           {cryptoData.data.price_change_percentage_24h.usd.toFixed(2)}%
         </span>

@@ -42,7 +42,7 @@ function Crypto(): JSX.Element {
           Bitcoin
         </div>
         <div className="text-sm text-[#5D667B] pl-2">BTC</div>
-        <div className="bg-[#808A9D] px-3 py-2 text-white rounded-xl ml-7">
+        <div className="bg-[#808A9D] px-3 py-2 text-white rounded-lg ml-7">
           Rank #1
         </div>
       </div>
@@ -88,11 +88,11 @@ function Crypto(): JSX.Element {
         <div className="text-sm text-[#768396] ml-2 mt-2">(24H)</div>
       </div>
       <hr className="my-4" />
-      <div className="flex mb-4 justify-between">
-        <div className="text-lg font-semibold text-[#0B1426]">
+      <div className="lg:flex mb-4 justify-between">
+        <div className="ls:text-lg text-sm font-semibold text-[#0B1426]">
           Bitcoin Price Chart (USD)
         </div>
-        <div className="flex space-x-5 mr-4 text-sm text-[#5D667B] font-medium text-center items-center">
+        <div className="flex lg:space-x-5 space-x-3 mr-4 text-sm text-[#5D667B] font-medium text-center items-center">
           <div>1H</div>
           <div>24H</div>
           <div className="text-[#0141CF] bg-[#E2ECFE] rounded-3xl px-3 py-1">
@@ -105,7 +105,7 @@ function Crypto(): JSX.Element {
           <div>All</div>
         </div>
       </div>
-      <div className="h-[420px]">
+      <div className="lg:h-[420px] h-[300px]">
         <TradingViewWidget />
       </div>
     </div>

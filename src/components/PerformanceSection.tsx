@@ -70,7 +70,7 @@ function PerformanceSection() {
               <IoMdInformationCircle className="text-[#ABB9BF] text-lg ml-2" />
             </div>
           </div>
-          <div className="flex mb-8">
+          <div className="lg:flex mb-8">
             <div className="w-1/2 mr-10 mt-3  ">
               <div className="flex justify-between py-5 border-b-2 border-[#D3E0E6]">
                 <div className="text-[#768396] text-sm font-semibold">

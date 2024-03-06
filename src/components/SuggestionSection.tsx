@@ -27,6 +27,7 @@ function SuggestionSection() {
           {(cryptoData as any[]).slice(0, 5).map((crypto, index) => (
             <CryptoCard key={index} cryptoData={crypto.item} />
           ))}
+          
         </div>
            
 
@@ -73,6 +74,7 @@ function CryptoCard({ cryptoData }: any) {
         {cryptoData.data.price}
       </div>
       {/* Display the chart image */}
+      
       <img
         src={
           cryptoData && cryptoData.sparkline

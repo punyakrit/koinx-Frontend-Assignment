@@ -65,7 +65,7 @@ function Coin({ symbol, name, img, changePercentage }: CoinProps) { // Use CoinP
         <div>
           <img src={img} className="w-6 rounded-full" alt="Coin icon" />
         </div>
-        <div className="text-[#0F1629] ml-2 ">
+        <div className="text-[#0F1629] ml-1 ">
           {name} ({symbol})
         </div>
       </div>

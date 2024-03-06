@@ -8,6 +8,7 @@ import ToggleSection from "../components/ToggleSection"
 import Tokenomics from "../components/Tokenomics"
 import TrendingCoins from "../components/TrendingCoins"
 import Team from "../components/TeamCard"
+import SuggestionSection from "../components/SuggestionSection"
 
 
 function CoinPage() {
@@ -31,6 +32,7 @@ function CoinPage() {
         </div>
         
       </div>
+        <SuggestionSection/>
     </div>
   )
 }

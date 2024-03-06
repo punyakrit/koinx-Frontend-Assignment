@@ -5,7 +5,10 @@ import PageHolder from "../components/PageHolder"
 import PerformanceSection from "../components/PerformanceSection"
 import SentimentSection from "../components/SentimentSection"
 import ToggleSection from "../components/ToggleSection"
+import Tokenomics from "../components/Tokenomics"
 import TrendingCoins from "../components/TrendingCoins"
+import Team from "../components/TeamCard"
+
 
 function CoinPage() {
   return (
@@ -19,6 +22,8 @@ function CoinPage() {
             <PerformanceSection/>
             <SentimentSection/>
             <About/>
+            <Tokenomics/>
+            <Team/>
         </div>
         <div className="w-4/12 mr-14">
           <CradsPromo/>
